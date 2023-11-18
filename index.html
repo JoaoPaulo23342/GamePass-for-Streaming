@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePass</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+    <main class="container main">
+        <img src="img/LogoGamepass.jpg" alt="GamePass For Streaming">
+        <section class="divisor">
+            <div class="divisor__line"></div>
+            <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar">
+            <div class="divisor__line"></div>
+        </section>
+        <h1 class="page-title">Serviço de Streaming De<span class="page-title__emphasis"> Games</span></h1>
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="img/AtomicLogo.jpg" alt="Capa Do Jogo Atomic Heart">
+                    </div>
+                    <p class="dashboard__item__name">Atomic Heart</p>
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Asinar GamePass</a>
+                </li>
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                        <img src="img/HorizonLogo.jpg" alt="Capa jogo Horizon Zero Dawn">
+                    </div>
+                    <p class="dashboard__item__name">Horizon Zero Dawn</p>
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button">Assinar GamePass</a>
+                </li>
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="img/SkyrimLogo.jpg" alt="Capa jogo SkyRim">
+                    </div>
+                    <p class="dashboard__item__name">Skyrim</p>
+                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Cancelar Assinatura</a>
+                </li>
+            </ul>
+        </section>
+        <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras">
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
